@@ -314,7 +314,7 @@ class _HotComingSoonWidgetState extends State<_HotComingSoonWidget> {
         ),
       ),
       onTap: () {
-        Router.push(context, Router.detailPage, comingSoonBean.id);
+        AppRouter.push(context, AppRouter.detailPage, comingSoonBean.id);
       },
     );
   }
@@ -359,7 +359,7 @@ class _HotComingSoonWidgetState extends State<_HotComingSoonWidget> {
         ),
       ),
       onTap: () {
-        Router.push(context, Router.detailPage, hotMovieBean.id);
+        AppRouter.push(context, AppRouter.detailPage, hotMovieBean.id);
       },
     );
   }

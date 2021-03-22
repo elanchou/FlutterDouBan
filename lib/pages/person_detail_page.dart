@@ -227,7 +227,7 @@ class _PersonDetailPageState extends State<PersonDetailPage> {
         ),
       ),
       onTap: () {
-        Router.push(context, Router.detailPage, bean.id);
+        AppRouter.push(context, AppRouter.detailPage, bean.id);
       },
     );
   }

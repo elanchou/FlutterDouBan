@@ -247,7 +247,7 @@ class _DetailPageState extends State<DetailPage> {
               ],
             ),
             onTap: () {
-              Router.push(context, Router.personDetailPage,
+              AppRouter.push(context, AppRouter.personDetailPage,
                   {'personImgUrl': imgUrl, 'id': id});
             },
           ),
@@ -327,7 +327,7 @@ class _DetailPageState extends State<DetailPage> {
                       ),
                     ),
                     onTap: () {
-                      Router.push(context, Router.playListPage,
+                      AppRouter.push(context, AppRouter.playListPage,
                           _movieDetailBean.trailers);
                     },
                   );
@@ -493,7 +493,7 @@ class _DetailPageState extends State<DetailPage> {
               padding: EdgeInsets.all(12.0),
             ),
             onTap: () {
-              Router.push(context, bean.author.alt, {'title': '个人主页'});
+              AppRouter.push(context, bean.author.alt, {'title': '个人主页'});
             },
           );
         }
